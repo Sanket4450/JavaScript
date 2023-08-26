@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History API</title>
+</head>
+<body>
+
+    <!-- Web History API provides easy methods to access the windows.history object. -->
+
+    <!-- back() method loads the previous URL in the windows.history list. the same as clicking the "back arrow" in your browser. -->
+
+    <button onclick="myFunction1()">Back</button>
+
+    <script>
+        function myFunction1() {
+            window.history.back();
+        }
+    </script>
+
+    <!-- forward() method loads the next URL in the windows.history list. the same as clicking the "forward arrow" in your browser. -->
+
+    <button onclick="myFunction2">Forward</button>
+
+    <script>
+        function myFunction2() {
+            window.history.forward();
+        }
+    </script>
+
+    <!-- go() method loads a specific URL from the history list -->
+
+    <button onclick="myFunction3()">2 Pages Back</button>
+
+    <script>
+        function myFunction3() {
+            window.history.go(-2);
+        }
+    </script>
+
+    <!-- length property returns the number of URLs in the history list -->
+
+    <button onclick="myFunction4()">Length</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction4() {
+            let length = window.history.length;
+            document.getElementById("demo").innerHTML = length;
+        }
+    </script>
+    
+</body>
+</html>

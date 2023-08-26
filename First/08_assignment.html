@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operator</title>
+</head>
+<body>
+
+    <h1>Assignment Operators</h1>
+
+    <!-- Assignment operators assign values to JavaScript variables. -->
+
+    <h2>Simple Assignment Operator</h2>
+
+    <p id="demo1"></p>
+    
+    <p id="demo2"></p>
+
+    <h2>Addition Assignment Operator</h2>
+    
+    <p id="demo3"></p>
+    
+    <p id="demo4"></p>
+
+    <h2>Subtraction Assignment Operator</h2>
+    
+    <p id="demo5"></p>
+
+    <h2>Multiplication Assignment Operator</h2>
+    
+    <p id="demo6"></p>
+
+    <h2>Exponentiation Assignment Operator</h2>
+    
+    <p id="demo7"></p>
+
+    <h2>Division Assignment Operator</h2>
+    
+    <p id="demo8"></p>
+
+    <h2>Remainder Assignment Operator</h2>
+    
+    <p id="demo9"></p>
+
+    <h2>Left Shift Assignment Operator</h2>
+    
+    <p id="demo10"></p>
+
+    <h2>Right Shift Assignment Operator</h2>
+    
+    <p id="demo11"></p>
+
+    <h2>Unsigned Right Shift Assignment Operator</h2>
+    
+    <p id="demo12"></p>
+
+    <h2>Bitwise AND Assignment Operator</h2>
+    
+    <p id="demo13"></p>
+
+    <h2>Bitwise OR Assignment Operator</h2>
+    
+    <p id="demo14"></p>
+
+    <h2>Bitwise XOR Assignment Operator</h2>
+    
+    <p id="demo15"></p>
+
+    <h2>Logical AND assignment operator</h2>
+    
+    <p id="demo16"></p>
+
+    <h2>Logical OR assignment operator</h2>
+    
+    <p id="demo17"></p>
+
+    <h2>Nullish coalescing assignment operator</h2>
+    
+    <p id="demo18"></p>
+
+    <script>
+
+        // Simple Assignment Operator assigns a value to a variable.
+
+        let a = 10;
+        document.getElementById("demo1").innerHTML = "Value of a is: " + a;
+
+        let b = 50 + a;
+        document.getElementById("demo2").innerHTML = "Value of b is: " + b;
+
+        // Addition Assignment Operator adds a value to a variable.
+
+        let c = 10;
+        c += 5;
+        document.getElementById("demo3").innerHTML = "Value of c is: " + c;
+
+        let text1 = "Hello";
+        text1 += " World";
+        document.getElementById("demo4").innerHTML = text1;
+
+        // Subtraction Assignment Operator subtracts a value from a variable.
+
+        let d = 10;
+        d -= 5;
+        document.getElementById("demo5").innerHTML = "Value of d is: " + d;
+
+        // Multiplication Assignment Operator multiplies a variable.
+
+        let e = 10;
+        e *= 5;
+        document.getElementById("demo6").innerHTML = "Value of e is: " + e;
+
+        // Exponentiation Assignment Operator raises a variable to the power of the operand.
+
+        let f = 10;
+        f **= 5;
+        document.getElementById("demo7").innerHTML = "Value of f is: " + f;
+
+        // Division Assignment Operator divides a variable.
+
+        let g = 10;
+        g /= 5;
+        document.getElementById("demo8").innerHTML = g;
+
+        // Remainder Assignment Operator assigns a remainder to a variable.
+
+        let h = 10;
+        h %= 5;
+        document.getElementById("demo9").innerHTML = "Value of h is: " + h;
+
+        // Left Shift Assignment Operator left shifts a variable.
+
+        let i = -100;
+        i <<= 5;
+        document.getElementById("demo10").innerHTML = "Value of i is: " + i;
+
+        // Right Shift Assignment Operator right shifts a variable(signed).
+
+        let j = -100;
+        j >>= 5;
+        document.getElementById("demo11").innerHTML = "Value of j is: " + j;
+
+        // Unsigned Right Shift Assignment Operator right shifts a variable(unsigned).
+
+        let k = -100;
+        k >>>= 5;
+        document.getElementById("demo12").innerHTML = "Value of k is: " + k;
+
+        // Bitwise AND Assignment Operator does a bitwise AND operation on two operands and assigns the result to the the variable.
+
+        let l = 100;
+        l &= 5;
+        document.getElementById("demo13").innerHTML = "Value of l is: " + l;
+
+        // Bitwise OR Assignment Operator does a bitwise OR operation on two operands and assigns the result to the variable.
+
+        let m = 100;
+        m |= 5;
+        document.getElementById("demo14").innerHTML = "Value of m is: " + m;
+
+        // Bitwise XOR Assignment Operator does a bitwise XOR operation on two operands and assigns the result to the variable.
+
+        let n = 100;
+        n ^= 5;
+        document.getElementById("demo15").innerHTML = "Value of n is: " + n;
+
+        // Logical AND assignment operator is used between two values.
+
+        let o = 100;
+        o &&= 5;
+        document.getElementById("demo16").innerHTML = "Value of o is: " + o;
+
+        // Logical OR assignment operator is used between two values.
+
+        let p = undefined;
+        p ||= 5;
+        document.getElementById("demo17").innerHTML = "Value of p is: " + p;
+
+        // Nullish coalescing assignment operator is used between two values.
+
+        let q;
+        document.getElementById("demo18").innerHTML = q ??= 5;
+
+    </script>
+    
+</body>
+</html>

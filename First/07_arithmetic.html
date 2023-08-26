@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operators</title>
+</head>
+<body>
+
+    <h1>Arithmetic Operators</h1>
+
+    <!-- Arithmetic operators perform arithmetic on numbers (literals or variables). -->
+    
+    <!-- The numbers(in an arithmetic operation) are called operands. -->
+    
+    <!-- The operation(to be performed between the two operands) is defined by an operator. -->
+
+    <h2>Addition Operator</h2>
+
+    <h3 id="demo1"></h3>
+
+    <h2>Subtraction Operator</h2>
+    
+    <h3 id="demo2"></h3>
+
+    <h2>Multiplication Operator</h2>
+    
+    <h3 id="demo3"></h3>
+
+    <h2>Division Operator</h2>
+    
+    <h3 id="demo4"></h3>
+
+    <h2>Modulus Operator</h2>
+    
+    <h3 id="demo5"></h3>
+
+    <h2>Increment Operator</h2>
+    
+    <h3 id="demo6"></h3>
+
+    <h2>Decrement Operator</h2>
+    
+    <h3 id="demo7"></h3>
+
+    <h2>Exponentiation Operator</h2>
+    
+    <h3 id="demo8"></h3>
+
+    <h2>Math.pow() Function Operator</h2>
+    
+    <h3 id="demo9"></h3>
+
+    <h2>Modulus Operator</h2>
+    
+    <h3 id="demo10"></h3>
+
+    <h2>Modulus Operator</h2>
+    
+    <h3 id="demo11"></h3>
+
+    <h2>Modulus Operator</h2>
+    
+    <h3 id="demo12"></h3>
+
+    <script>
+
+        // addition operator(+) adds numbers.
+
+        let a = 5;
+        let b = 2;
+        let c = a + b;
+        document.getElementById("demo1").innerHTML = c;
+
+        // subtraction operator(-) subtracts numbers.
+
+        let d = 5;
+        let e = 2;
+        let f = d - e;
+        document.getElementById("demo2").innerHTML = f;
+
+        // multiplication operator(*) multiplies numbers.
+
+        let g = 5;
+        let h = 2;
+        let i = g * h;
+        document.getElementById("demo3").innerHTML = i;
+
+        // division operator(/) divides numbers.
+
+        let j = 5;
+        let k = 2;
+        let l = j / k;
+        document.getElementById("demo4").innerHTML = l;
+
+        // modulus operator(%) returns the division remainder.
+
+        let m = 5;
+        let n = 2;
+        let o = m % n;
+        document.getElementById("demo5").innerHTML = o;
+
+        // increment operator(++) increments numbers.
+
+        let p = 5;
+        p++;
+        let q = p;
+        document.getElementById("demo6").innerHTML = q;
+
+        // decrement operator(--) decrements numbers.
+
+        let r = 5;
+        r--;
+        let s = r;
+        document.getElementById("demo7").innerHTML = s;
+
+        // exponentiation operator(**) raises the first operand to the power of the second operand.
+
+        let t = 5;
+        document.getElementById("demo8").innerHTML = t ** 2;
+
+        // x ** y produces the same result as Math.pow(x, y)
+
+        let u = 5;
+        document.getElementById("demo9").innerHTML = Math.pow(u, 2);
+
+        // Operator precedence describes the order in which operations are performed in an arithmetic expression.
+
+        document.getElementById("demo10").innerHTML = 100 + 50 * 3;
+
+        // Multiplication(*) and division(/) have higher precedence than addition (+) and subtraction (-).
+
+        // When using parentheses, the operations inside the parentheses are computed first
+
+        // When many operations have the same precedence(like addition and subtraction or multiplication and division),
+        // they are computed from left to right
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser API</title>
+</head>
+<body>
+
+    <!-- API stands for Application Programming Interface. -->
+
+    <!-- A Web API is an application programming interface for the Web. -->
+
+    <!-- A Browser API can extend the functionality of a web browser. -->
+    <!-- A Server API can extend the functionality of a web server. -->
+
+    <!-- All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data. -->
+
+    <h2>JavaScript Geolocation</h2>
+    
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">My Location</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+
+        function getLocation() {
+            try {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            catch {
+                x.innerHTML = "Can't get location";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>" + "Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+    <!-- Third party APIs are not built into your browser. To use these APIs, you will have to download the code from the Web. -->
+
+    <!-- YouTube API - Allows you to display videos on a web site. -->
+    <!-- Twitter API - Allows you to display Tweets on a web site. -->
+    <!-- Facebook API - Allows you to display Facebook info on a web site. -->
+    
+</body>
+</html>

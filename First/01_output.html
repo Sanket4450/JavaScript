@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+
+    <!-- JavaScript can "display" data in different ways: -->
+
+    <!-- To access an HTML element, JavaScript can use the document.getElementById(id) method. -->
+
+    <!-- id attribute defines the HTML element. The innerHTML property defines the HTML content -->
+
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+    
+    <p id="demo"></p>
+
+    <!-- For testing purposes, it is convenient to use document.write() -->
+
+    <!-- Using document.write() after an HTML document is loaded, will delete all existing HTML -->
+
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+    <!-- You can use an alert box to display data -->
+
+    <!-- For debugging purposes, you can call the console.log() method in the browser to display data. -->
+
+    <!-- JavaScript does not have any print object or print methods. -->
+
+    <!-- The only exception is that you can call the window.print() method in the browser to print the content of the current
+    window. -->
+
+    <button onclick ="window.print()">Print this page</button>
+
+    <script>
+        document.getElementById("demo").innerHTML = 5 + 6;
+
+        document.write(5 + 6);
+
+        window.alert(5 + 6);
+        alert(6 + 7);
+
+        console.log(10 + 15);
+    </script>
+    
+</body>
+</html>

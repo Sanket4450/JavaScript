@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Changing Content</title>
+</head>
+<body>
+
+    <!-- HTML DOM allows JavaScript to change the content of HTML elements. -->
+
+    <!-- easiest way to modify the content of an HTML element is by using the innerHTML property. -->
+
+    <p id="demo1">Virat Kohli</p>
+
+    <script>
+        document.getElementById("demo1").innerHTML = "Rohit Sharma";
+    </script>
+
+    <p id="demo2">Cristiano Ronaldo</p>
+
+    <script>
+        let abc = document.getElementById("demo2");
+        abc.innerHTML = "Lionel Messi";
+    </script>
+
+    <!-- Changing the Value of an Attribute -->
+
+    <img id="myImage" src="/HTML/Images/IMG_2.jpg">
+
+    <script>
+        document.getElementById("myImage").src = "/HTML/Images/IMG_1.jpg";
+        document.getElementById("myImage").width = 300;
+    </script>
+
+    <!-- JavaScript can create dynamic HTML content -->
+
+    <p id="demo3"></p>
+
+    <script>
+        document.getElementById("demo3").innerHTML = "Date : " + Date();
+    </script>
+
+    <!-- document.write() can be used to write directly to the HTML output stream -->
+
+    <script>
+        document.write(Date());
+    </script>
+
+    <!-- Never use document.write() after the document is loaded. It will overwrite the document. -->
+    
+</body>
+</html>

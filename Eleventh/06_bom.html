@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+
+<body>
+
+    <!-- Browser Object Model (BOM) allows JavaScript to "talk to" the browser. -->
+
+    <!-- window object is supported by all browsers. It represents the browser's window. -->
+
+    <h2>JavaScript Window</h2>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <!-- window.innerHeight - the inner height of the browser window (in pixels) -->
+
+    <script>
+        document.getElementById("demo1").innerHTML =
+            "Browser inner window width: " + window.innerWidth + "px";
+    </script>
+
+    <!-- window.innerWidth - the inner width of the browser window (in pixels) -->
+
+    <script>
+        document.getElementById("demo2").innerHTML =
+            "Browser inner window height: " + window.innerHeight + "px";
+    </script>
+
+    <!-- screen.width property returns the width of the visitor's screen in pixels. -->
+
+    <script>
+        document.getElementById("demo3").innerHTML =
+            "Screen width: " + screen.width + "px";
+    </script>
+
+    <!-- screen.height property returns the height of the visitor's screen in pixels. -->
+
+    <script>
+        document.getElementById("demo4").innerHTML =
+            "Screen height: " + screen.height + "px";
+    </script>
+
+    <!-- window.location object can be used to get the current page address (URL) and to redirect the browser to a new page. -->
+
+    <!-- window.location.href property returns the URL of the current page. -->
+
+    <script>
+        document.getElementById("demo5").innerHTML =
+            "Page location is " + window.location.href;
+    </script>
+
+    <!-- window.location.hostname property returns the name of the internet host (of the current page). -->
+
+    <script>
+        document.getElementById("demo6").innerHTML =
+            "Page hostname is " + window.location.hostname;
+    </script>
+
+    <!-- window.location.pathname property returns the pathname of the current page -->
+
+    <script>
+        document.getElementById("demo7").innerHTML =
+            "Page path is " + window.location.pathname;
+    </script>
+
+    <!-- window.location.protocol property returns the web protocol of the page. -->
+
+    <script>
+        document.getElementById("demo8").innerHTML =
+            "Page protocol is " + window.location.protocol;
+    </script>
+
+    <!-- window.location.port property returns the number of the internet host port (of the current page). -->
+
+    <script>
+        document.getElementById("demo9").innerHTML =
+            "Port number is " + window.location.port;
+    </script>
+
+    <!-- Most browsers will not display default port numbers (80 for http and 443 for https) -->
+
+    <!-- window.location.assign() method loads a new document. -->
+
+    <input type="button" value="Amazon.in" onclick="newDoc()">
+
+    <script>
+        function newDoc() {
+            window.location.assign("https://www.amazon.in/");
+        }
+    </script>
+
+    <!-- window.history object contains the browsers history. -->
+
+    <!-- history.back() method loads the previous URL in the history list. -->
+
+    <input type="button" value="Back" onclick="goBack()">
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <!-- history.forward() method loads the next URL in the history list. -->
+
+    <input type="button" value="Forward" onclick="goForward()">
+
+    <script>
+        function goForward() {
+            window.history.forward();
+        }
+    </script>
+
+    <!-- window.navigator object contains information about the visitor's browser. -->
+
+    <!-- cookieEnabled property returns true if cookies are enabled, otherwise false -->
+
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+
+    <script>
+        document.getElementById("demo10").innerHTML =
+            "cookiesEnabled is " + navigator.cookieEnabled;
+    </script>
+
+    <!-- appName property returns the application name of the browser -->
+
+    <script>
+        document.getElementById("demo11").innerHTML =
+            "navigator.appName is " + navigator.appName;
+    </script>
+
+    <!-- This property is removed (deprecated) in the latest web standard. -->
+    <!-- Most browsers (IE11, Chrome, Firefox, Safari) returns Netscape as appName. -->
+
+    <!-- appCodeName property returns the application code name of the browser -->
+
+    <script>
+        document.getElementById("demo12").innerHTML =
+            "navigator.appCodeName is " + navigator.appCodeName;
+    </script>
+
+    <!-- This property is removed (deprecated) in the latest web standard. -->
+    <!-- Most browsers (IE11, Chrome, Firefox, Safari, Opera) returns Mozilla as appCodeName. -->
+
+    <!-- product property returns the product name of the browser engine -->
+
+    <script>
+        document.getElementById("demo13").innerHTML =
+            "navigator.product is " + navigator.product;
+    </script>
+
+    <!-- This property is removed (deprecated) in the latest web standard. -->
+    <!-- Most browsers returns Gecko as product. -->
+
+    <!-- appVersion property returns version information about the browser -->
+
+    <script>
+        document.getElementById("demo14").innerHTML = navigator.appVersion;
+    </script>
+
+    <!-- userAgent property returns the user-agent header sent by the browser to the server -->
+
+    <script>
+        document.getElementById("demo15").innerHTML = navigator.userAgent;
+    </script>
+
+    <!-- platform property returns the browser platform (operating system) -->
+
+    <script>
+        document.getElementById("demo16").innerHTML = navigator.platform;
+    </script>
+
+    <!-- language property returns the browser's language -->
+
+    <script>
+        document.getElementById("demo17").innerHTML = navigator.language;
+    </script>
+
+    <!-- onLine property returns true if the browser is online -->
+
+    <script>
+        document.getElementById("demo18").innerHTML = navigator.onLine;
+    </script>
+
+    <!-- javaEnabled() method returns true if Java is enabled -->
+
+    <script>
+        document.getElementById("demo19").innerHTML = navigator.javaEnabled();
+    </script>
+
+    <!-- JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box. -->
+
+    <!-- An alert box is often used if you want to make sure information comes through to the user. -->
+
+    <!-- window.alert() method can be written without the window prefix. -->
+
+    <script>
+        window.alert("Sanket Talaviya");
+    </script>
+
+    <script>
+        alert("I am an Indian"); // we can skip window keyword
+    </script>
+
+    <!-- A confirm box is often used if you want the user to verify or accept something. -->
+
+    <!-- window.confirm() method can be written without the window prefix. -->
+
+    <button onclick="myFunction1()">Try it</button>
+
+    <p id="demo20"></p>
+
+    <script>
+        function myFunction1() {
+            let text1;
+            if (confirm("Press a button!")) {
+                text1 = "You pressed OK!";
+            }
+            else {
+                text1 = "You pressed Cancel!";
+            }
+            document.getElementById("demo20").innerHTML = text1;
+        }
+    </script>
+
+    <!-- A prompt box is often used if you want the user to input a value before entering a page. -->
+
+    <!-- window.prompt() method can be written without the window prefix. -->
+
+    <button onclick="myFunction2">Try it</button>
+
+    <p id="demo21"></p>
+
+    <script>
+        function myFunction2() {
+            let text2;
+            let person = prompt("Please enter your name: ", "Elon Musk");
+            if (person == null || person == ""){
+                text2 = "User cancelled the prompt.";
+            }
+            else {
+                text2 = "Hello! " + person + " What a sweet name!";
+            }
+            document.getElementById("demo21").innerHTML = text2;
+        }
+    </script>
+
+    <!-- To display line breaks inside a popup box, use a back-slash followed by the character n. -->
+
+    <script>
+        alert("12345\n67890");
+    </script>
+
+    <!-- window object allows execution of code at specified time intervals. -->
+
+    <!-- window.setTimeout() method can be written without the window prefix. -->
+
+    <button onclick="setTimeout(myFunction3, 3000)">Try it</button>
+
+    <script>
+        function myFunction3() {
+            alert("3 Seconds Delay");
+        }
+    </script>
+
+    <!-- setInterval() method repeats a given function at every given time-interval. -->
+
+    <!-- window.setInterval() method can be written without the window prefix. -->
+
+    <p id="demo22"></p>
+
+    <script>
+        setInterval(myTimer, 1000); // There are 1000 milliseconds in one second.
+
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("demo22").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
+
+</body>
+
+</html>

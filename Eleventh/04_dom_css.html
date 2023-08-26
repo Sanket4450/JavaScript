@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS</title>
+</head>
+<body>
+
+    <!-- HTML DOM allows JavaScript to change the style of HTML elements. -->
+
+    <p id="demo1">Sanket Talaviya</p>
+    <p id="demo2">Sanket Talaviya</p>
+
+    <script>
+        document.getElementById("demo1").style.color = "red";
+        document.getElementById("demo1").style.fontSize = "40px";
+        document.getElementById("demo1").style.fontFamily = "monospace";
+    </script>
+
+    <!-- HTML DOM allows you to execute code when an event occurs. -->
+
+    <p id="demo3">Pakistan Zindabad</p>
+
+    <button type="button" onclick="document.getElementById('demo3').innerHTML = 'India Zindabad'">Click Me!</button>
+    
+</body>
+</html>

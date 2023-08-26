@@ -1,0 +1,9 @@
+{
+"name":"Sanket",
+"age":25,
+"weight":49.36,
+"employee":{"name":"Virat Sharma", "age":34, "country":"India"},
+"employees":["John", "David", "Peter", "Ben"],
+"injured":false,
+"runs":null
+}

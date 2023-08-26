@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation API</title>
+</head>
+<body>
+
+    <!-- HTML Geolocation API is used to get the geographical position of a user. -->
+
+    <!-- Since this can compromise privacy, the position is not available unless the user approves it. -->
+
+    <!-- getCurrentPosition() method is used to return the user's position. -->
+
+    <h2>JavaScript Geolocation API</h2>
+
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">My Location</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+                x.innerHTML = "Geolocation is not supported in your browser.";
+            }
+        }
+        // we can also do it with try-catch
+        
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>" + "Longitude: " + position.coords.longitude;
+        }
+    </script>
+    
+</body>
+</html>

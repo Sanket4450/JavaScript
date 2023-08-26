@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+</head>
+<body>
+
+    <!-- A JavaScript variable can hold any type of data. -->
+
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <p id="demo4"></p>
+
+    <p id="demo5"></p>
+
+    <p id="demo6"></p>
+
+    <p id="demo7"></p>
+
+    <p id="demo8"></p>
+
+    <p id="demo9"></p>
+
+    <p id="demo10"></p>
+
+    <p id="demo11"></p>
+
+    <p id="demo12"></p>
+
+    <p id="demo13"></p>
+
+    <p id="demo14"></p>
+
+    <p id="demo15"></p>
+
+    <script>
+
+        // When adding a number and a string, JavaScript will treat the number as a string.
+
+        let a = 16 + "Bugatti";
+        document.getElementById("demo1").innerHTML = a;
+
+        let b = "Bugatti" + 16;
+        document.getElementById("demo2").innerHTML = b;
+
+        // JavaScript evaluates expressions from left to right.Different sequences can produce different results
+
+        let c = 12 + 5 + "Saab";
+        document.getElementById("demo3").innerHTML = c;
+
+        // In above example, JavaScript treats 16 and 4 as numbers, until it reaches "Saab".
+
+        let d = "Saab" + 12 + 5;
+        document.getElementById("demo4").innerHTML = d;
+
+        // In above example, since the first operand is a string, all operands are treated as strings.
+
+        // JavaScript has dynamic types.This means that the same variable can be used to hold different data types
+
+        let e;       // Now e is undefined
+        e = 5;       // Now e is a Number
+        e = "Virat";  // Now e is a String
+
+        document.getElementById("demo5").innerHTML = e;
+
+        // Strings are written with quotes.You can use single or double quotes
+
+        let carName1 = "Bugatti La Voiture Noire";
+        let carName2 = 'Bugatti La Voiture Noire';
+
+        document.getElementById("demo6").innerHTML = carName1;
+        document.getElementById("demo7").innerHTML = carName2;
+
+        // You can use quotes inside a string, as long as they don't match the quotes surrounding the string
+
+        // Single quote inside double quotes:
+        let answer1 = "It's alright";
+
+        // Single quotes inside double quotes:
+        let answer2 = "He is called 'Johnny'";
+
+        // Double quotes inside single quotes:
+        let answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo8").innerHTML =
+        answer1 + "<br>" +
+        answer2 + "<br>" +
+        answer3;
+
+        // All JavaScript numbers are stored as decimal numbers(floating point).
+
+        // With decimals:
+        let f1 = 34.00;
+
+        // Without decimals:
+        let f2 = 34;
+
+        let f3 = 3.14;
+
+        document.getElementById("demo9").innerHTML = f1 + "<br>" + f2 + "<br>" + f3;
+
+        // Extra large or extra small numbers can be written with scientific(exponential) notation
+
+        let g = 123e5;
+        let h = 123e-5;
+
+        document.getElementById("demo10").innerHTML = g + "<br>" + h;
+
+        // Javascript numbers are always one type: double(64 - bit floating point).
+
+        // JavaScript BigInt is a new datatype that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+
+        let i = BigInt("123456789012345678901234567890");
+        document.getElementById("demo11").innerHTML = i;
+
+        // Booleans can only have two values: true or false are often used in conditional testing.
+
+        let j = 5;
+        let k = 5;
+        let l = 6;
+
+        document.getElementById("demo12").innerHTML =
+        (j == k) + "<br>" + (j == l);
+
+        // JavaScript arrays are written with square brackets, Array items are separated by commas.
+
+        const mobile = ["Apple", "Samsung", "OnePlus"];
+
+        document.getElementById("demo13").innerHTML = cars[0];
+
+        // JavaScript objects are written with curly braces { }, Object properties are written as name:value pairs, separated by commas.
+
+        // In JavaScript, a variable without a value, has the value undefined.The type is also undefined.
+
+        let bike; // Value is undefined, type is undefined
+
+        // An empty value has nothing to do with undefined, An empty string has both a legal value and a type.
+
+        let game = ""; // The value is "", the typeof is "string"
+
+    </script>
+    
+</body>
+</html>

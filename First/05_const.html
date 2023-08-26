@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const</title>
+</head>
+<body>
+
+    <h2>Constant Arrays</h2>
+
+    <p id="demo1"></p>
+
+    <h2>Constant Objects</h2>
+
+    <p id="demo2"></p>
+
+    <script>
+
+       // A const variable cannot be reassigned
+
+        const PI1 = 3.141592653589793;
+        PI = 3.14;      // This will give an error
+        PI = PI + 10;   // This will also give an error
+
+        // const variables must be assigned a value when they are declared
+
+        const PI2 = 3.14159265359;
+
+        // Always declare a variable with const when you know that the value should not be changed.
+
+        // Constant Arrays:
+
+        // Create an Array:
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        // Change an element:
+        cars[0] = "Toyota";
+
+        // Add an element:
+        cars.push("Audi");
+
+        // Display the Array:
+        document.getElementById("demo1").innerHTML = cars;
+
+        // Constant Objects:
+
+        // Create an object:
+        const car = { type: "Fiat", model: "500", color: "white" };
+
+        // Change a property:
+        car.color = "red";
+
+        // Add a property:
+        car.owner = "Johnson";
+
+        // Display the property:
+        document.getElementById("demo2").innerHTML = "Car owner is " + car.owner;
+
+        // Redeclaring a variable with const, in another scope, or in another block, is allowed
+
+        const x = 2;       // Allowed
+
+        {
+            const x = 3;   // Allowed
+        }
+
+        {
+            const x = 4;   // Allowed
+        }
+
+        // Variables defined with const are also hoisted to the top, but not initialized.
+
+        // Using a const variable before it is declared will result in a ReferenceError
+        
+    </script>
+    
+</body>
+</html>

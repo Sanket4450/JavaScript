@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+
+    <!-- A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element. -->
+
+    <h1 onclick="this.innerHTML='Search Engine Optimization'">SEO</h1>
+
+    <!-- To assign events to HTML elements you can use event attributes. -->
+
+    <button onclick="displayDate()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+
+    <label for="fname">Enter Your Name: </label>
+    <input type="text" id="fname" onchange="upperCase()">
+
+    <script>
+        function upperCase() {
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+
+    <h1 style="color: white; background-color: rgb(207, 17, 17); text-align: center; width: 20%; font-family: Verdana; padding: 10px;"
+    onmouseover="mouseHover(this)" onmouseout="mouseOut(this)">Virat Kohli</h1>
+
+    <script>
+        function mouseHover(object) {
+            object.innerHTML = "Rohit Sharma";
+        }
+        function mouseOut(object) {
+            object.innerHTML = "Virat Kohli";
+        }
+    </script>
+    
+</body>
+</html>

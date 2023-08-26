@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage API</title>
+</head>
+<body>
+
+    <!-- Web Storage API is a simple syntax for storing and retrieving data in the browser. -->
+
+    <!-- localStorage object provides access to a local storage for a particular Web Site.
+    It allows you to store, read, add, modify, and delete data items for that domain. -->
+
+    <!-- data is stored with no expiration date, and will not be deleted when the browser is closed. -->
+
+    <!-- localStorage.setItem() method stores a data item in a storage. -->
+
+    <script>
+        localStorage.setItem("name1", "John Wick");
+    </script>
+
+    <!-- localStorage.getItem() method retrieves a data item from the storage. takes a name as parameter -->
+
+    <p id="demo1"></p>
+
+    <script>
+        let x = localStorage.getItem("name1");
+        document.getElementById("demo1").innerHTML = x;
+    </script>
+
+    <!-- sessionStorage.setItem() method stores a data item in a storage. It takes a name and a value as parameters -->
+
+    <script>
+        sessionStorage.setItem("name2", "Ethan Hunt");
+    </script>
+
+    <!-- sessionStorage object stores data for one session, data is deleted when the browser is closed. -->
+
+    <p id="demo2"></p>
+
+    <script>
+        let y = sessionStorage.getItem("name2");
+        document.getElementById("demo2").innerHTML = y;
+    </script>
+
+    <!-- length returns the number of data items stored in the Storage object -->
+
+    <p id="demo3"></p>
+
+    <script>
+        let z = localStorage.length;
+        document.getElementById("demo3").innerHTML = z;
+    </script>
+
+    <!-- removeItem Removes that key from the storage -->
+
+    <script>
+        localStorage.setItem("India", "Delhi");
+        localStorage.setItem("USA", "Washington");
+        localStorage.setItem("UK", "London");
+        localStorage.setItem("China", "Beijing");
+        localStorage.setItem("Japan", "Tokyo");
+    </script>
+
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+        localStorage.removeItem("UK");
+        let length = localStorage.length;
+        document.getElementById("demo4").innerHTML = length;
+
+        document.getElementById("demo5").innerHTML = localStorage.getItem("UK"); // UK is now removed
+    </script>
+
+    <!-- clear() empty all key out of the storage -->
+
+    <p id="demo6"></p>
+
+    <script>
+        localStorage.clear();
+        document.getElementById("demo6").innerHTML = localStorage.length;
+    </script>
+    
+</body>
+</html>

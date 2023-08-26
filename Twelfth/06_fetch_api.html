@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+
+    <!-- Fetch API interface allows web browser to make HTTP requests to web servers. -->
+    
+    <h1>Fetch API</h1>
+
+    <p id="demo1">Fetch a file to change this text.</p>
+
+    <script>
+        let file = "fetch_info.txt";
+
+        fetch (file)
+        .then(x => x.text())
+        .then(y => document.getElementById("demo1").innerHTML = y);
+    </script>
+
+    <!-- Since Fetch is based on async and await, the example above might be easier to understand like this -->
+    
+</body>
+</html>
