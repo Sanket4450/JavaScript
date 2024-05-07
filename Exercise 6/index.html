@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    <title>CRUD Operations</title>
+</head>
+
+<body>
+
+    <h1 class="title">CRUD Operations</h1>
+
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="age" placeholder="Age">
+    <input type="text" id="city" placeholder="City">
+    <button onclick="addRecord()">Add</button>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th colspan="2">Options</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <form id="form-edit">
+                <input type="text" id="name-edit" placeholder="Name">
+                <input type="text" id="age-edit" placeholder="Age">
+                <input type="text" id="city-edit" placeholder="City">
+                <button class="save" onclick="setEditedRecord()">Save</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
